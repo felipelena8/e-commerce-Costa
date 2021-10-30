@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Perifericos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class = "nav">
+            <div class = "nav__top">
+                <div class = "header-logo"> 
+                    <a href="index.html">
+                        <img src="images/Logo.png" alt="">
+                    </a>
+                </div>
+                <div class = "nav__div nav__busqueda">
+                    <input type="text" class = "nav__input input__text text__white">
+                    <i class="fas fa-search fa-1.5x"></i>
+                </div>
+                <div>  
+                    <div class = "nav__div">
+                        <button class = "nav__button" type="button">
+                            <i class="fas fa-user fa-2x nav__button_image"></i>
+                        </button>  
+                    </div>  
+                    <div  class = "nav__div">
+                        <button class = "nav__button" type="button">
+                            <i class="fas fa-cart-arrow-down fa-2x nav__button_image"></i>
+                        </button>  
+                    </div>
+                </div>            
+            </div>
+            <div class = "nav__borde-rgb"></div>
+            <div>
+                <ul class = "nav__elementos">
+                    <li class = "nav__item textUpperCase"><a href="productos.html" class = "nav__link">Productos</a></li>
+                    <li class = "nav__item textUpperCase"  id = "perifericos_submenu">
+                        <a href="perifericos.html" class = "nav__link">Perifericos</a>
+                        <ul class = "nav__menu">
+                            <li class = "text nav__item"><a href="">Teclados</a></li>
+                            <li class = "text nav__item"><a href="">Mouses</a></li>
+                            <li class = "text nav__item"><a href="">Auriculares</a></li>
+                            <li class = "text nav__item"><a href="">Microfonos</a></li>
+                            <li class = "text nav__item"><a href="">Joysticks</a></li>
+                        </ul>
+                    </li>
+                    <li class = "nav__item textUpperCase"><a href="pcs_de_escritorio.html" class = "nav__link">Computadoras de escritorio</a></li>
+                    <li class = "nav__item textUpperCase"><a href="ayuda.html" class = "nav__link">Ayuda</a></li>
+                </ul>  
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class = "contenedor__main">
+            <div class = "navegar__productos">
+                <ul>
+                    <li class="items__productos text">Teclados</li>
+                    <li class="items__productos text">Kits de Mouse y Teclado</li>
+                    <li class="items__productos text">Mouses</li>
+                    <li class="items__productos text">Mouse Pads</li>
+                    <li class="items__productos text">Auriculares</li>
+                </ul>
+            </div>
+            <div class = "contenedor__productos">
+                <div class = "card">
+                    <div class = "imagen__producto" >
+                        <img src="images/productos/mouse.jpg" alt="">
+                    </div>
+                    <div class = "info__producto">
+                        <p class = "descripcion__producto text">Mouse Glorious Model D minus - Matte Black</p>
+                        <h3 class = "price__producto text">$6.500</h3>
+                        <button class = "sumar__carrito text">Sumar al carrito</button>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "imagen__producto" >
+                        <img src="images/productos/teclado.jpg" alt="">
+                    </div>
+                    <div class = "info__producto">
+                        <p class = "descripcion__producto text">Teclado Logitech G213 Prodigy RGB Gaming Español ES</p>
+                        <h3 class = "price__producto text">$6.700</h3>
+                        <button class = "sumar__carrito text">Sumar al carrito</button>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "imagen__producto" >
+                        <img src="images/productos/teclado 2.jpg" alt="">
+                    </div>
+                    <div class = "info__producto">
+                        <p class = "descripcion__producto text">
+                            Teclado Redragon K550 YAMA Black Mechanical Retroiluminado RGB Español</p>
+                        <h3 class = "price__producto text">$7.250</h3>
+                        <button class = "sumar__carrito text">Sumar al carrito</button>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "imagen__producto" >
+                        <img src="images/productos/auriculares.jpg" alt="">
+                    </div>
+                    <div class = "info__producto">
+                        <p class = "descripcion__producto text">Auriculares HyperX Cloud II Red PC | PS4 | Switch | XBOX</p>
+                        <h3 class = "price__producto text">$11.200</h3>
+                        <button class = "sumar__carrito text">Sumar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class = "footer_div">
+            <h4>Contáctenos</h4>
+                <ul>
+                    <li class = "text">Direc</li>
+                    <li class = "text">(54 11) 6708-1366</li>
+                    <li class = "text">consultasfgamer@gmail.com.ar</li>
+                    <li class = "text">
+                        <i class="fa fa-whatsapp" aria-hidden="true" rel="nofollow"></i>
+                        WhatsApp (+54 911 6708 1366)
+                    </li>
+                </ul>
+        </div>
+        <div class = "footer_div">
+            <h4>Seguinos en</h4>
+            <ul class = "item__social">
+                <li class = "item__social" >
+                    <a href="https://www.facebook.com/felipe.lena.5" target="blank" id = "facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li class = "item__social" >
+                    <a href="https://twitter.com/felipelena8" target="blank" id = "twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </li>
+                <li class = "item__social" >
+                    <a href="https://www.instagram.com/feli_lena/" target="blank" id = "instagram">
+                        <i class="fa fa-instagram instagram fa-2x" aria-hidden="true""></i>
+                    </a>
+                </li>
+            </ul> 
+        </div> 
+        <div class = "footer_div">
+            <h4>Suscribite y recibí ofertas</h4>
+            <form action="" class = "footer__form">
+                <input type="text" placeholder = "direccion de email..." name = "email" class ="input__text footer__input">
+                <button type = "submit" name = "email" class = "button__send"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/b3e3212614.js" crossorigin="anonymous"></script>
+</body>
+</html>
