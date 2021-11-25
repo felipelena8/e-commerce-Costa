@@ -59,12 +59,11 @@ header{
 
 }
 
-.nav__busqueda{
-    position: relative;
-    width: 27.7rem;
-    margin-right: 10rem;
+.navBusqueda{
+    min-width: 230px;
+    max-width: 400px;
 }
-.nav__busqueda:hover{
+.navBusqueda:hover{
     opacity: 60%
 }
 
@@ -386,11 +385,9 @@ footer ul li{
     position: relative;
 }
 /*Redes sociales*/
-.item__social{
-    text-decoration: none;
-}
 
-.item__social a{
+
+.item__social{
     color: white;
     transition: color 0.3s;
     height: 100%;
