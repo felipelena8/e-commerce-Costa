@@ -388,7 +388,6 @@ footer ul li{
 /*Redes sociales*/
 .item__social{
     text-decoration: none;
-    display: inline-block;
 }
 
 .item__social a{
@@ -433,6 +432,19 @@ footer h4{
 /*Varios*/
 img{
     width: 100%;
+}
+
+.categorias{
+    max-width: 1100px
+}
+
+.itemCategoria{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    width:100%;
+    flex-direction: column;
+    gap: 30px;
 }
 
 h1{
