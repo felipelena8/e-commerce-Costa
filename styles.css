@@ -44,14 +44,6 @@ header{
     animation: lineaRGB 2s linear 0s infinite;
 }
 
-.header-logo{
-    width: 25%;
-    transition: transform 0.2s;
-}
-.header-logo:hover{
-    transform:scale(1.1,1.1)
-}
-
 .nav__div{
     display: inline-block;
     margin: 0;
@@ -66,46 +58,9 @@ header{
     opacity: 60%
 }
 
-.nav__input{
-    background-color: #0d0d0d;
-    border: 1px solid #000;
-    border-radius: 30px;
-    width: 450px;
-    height:35px
-}
-
 .nav__item{
     display: inline-block;
     transition: all 0.2s 
-}
-
-.nav__item a{
-    transition: all 0.3s 
-}
-
-.fa-search{
-    color: white;
-    position: absolute;
-    top: 25%;
-    right: 5px;
-    cursor: pointer;
-}
-
-.nav__elementos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.nav__button{
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.nav__button_image{
-    color: #e9e7e7;
 }
 
 .nav__link{
