@@ -1,0 +1,23 @@
+{
+  "name": "e-commerce-costa",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000e\u0000-\u0000c\u0000o\u0000m\u0000m\u0000e\u0000r\u0000c\u0000e\u0000-\u0000C\u0000o\u0000s\u0000t\u0000a\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss/custom.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipelena8/e-commerce-Costa.git"
+  },
+  "author": "Felipe Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipelena8/e-commerce-Costa/issues"
+  },
+  "homepage": "https://github.com/felipelena8/e-commerce-Costa#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
