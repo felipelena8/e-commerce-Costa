@@ -1,35 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: linear-gradient(rgb(11, 11, 11), black);
 }
 
 /*Header*/
-header{
+header {
     width: 100%;
     background-color: #1f1f1f;
 }
 
-@keyframes lineaRGB{
+@keyframes lineaRGB {
     0% {
         background-position: 200% 0%;
     }
+
     100% {
         background-position: 0% 200%;
     }
 }
 
 /*Empieza estilos Nav */
-.nav{
+.nav {
     display: flex;
     flex-direction: column;
 }
 
-.nav__top{
+.nav__top {
     padding: 25px;
     display: flex;
     flex-direction: row;
@@ -37,33 +38,93 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.nav__borde-rgb{
-    background: linear-gradient(60deg,fuchsia 0%,cyan 50%, fuchsia 100%);
+
+.nav__borde-rgb {
+    background: linear-gradient(60deg, fuchsia 0%, cyan 50%, fuchsia 100%);
     height: 3px;
     background-size: 200% 200%;
     animation: lineaRGB 2s linear 0s infinite;
 }
 
+<<<<<<< HEAD
 .nav__div{
+=======
+.header-logo {
+    width: 25%;
+    transition: transform 0.2s;
+}
+
+.header-logo:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.nav__div {
+>>>>>>> cards
     display: inline-block;
     margin: 0;
 
 }
 
-.navBusqueda{
+.navBusqueda {
     min-width: 230px;
     max-width: 400px;
 }
-.navBusqueda:hover{
+
+.navBusqueda:hover {
     opacity: 60%
 }
 
+<<<<<<< HEAD
 .nav__item{
-    display: inline-block;
-    transition: all 0.2s 
+=======
+.nav__input {
+    background-color: #0d0d0d;
+    border: 1px solid #000;
+    border-radius: 30px;
+    width: 450px;
+    height: 35px
 }
 
+.nav__item {
+>>>>>>> cards
+    display: inline-block;
+    transition: all 0.2s
+}
+
+<<<<<<< HEAD
 .nav__link{
+=======
+.nav__item a {
+    transition: all 0.3s
+}
+
+.fa-search {
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 5px;
+    cursor: pointer;
+}
+
+.nav__elementos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav__button {
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav__button_image {
+    color: #e9e7e7;
+}
+
+.nav__link {
+>>>>>>> cards
     font-family: 'Roboto Condensed', sans-serif;
     margin: 75px;
     font-size: 1.25rem;
@@ -71,26 +132,27 @@ header{
     color: #FFFFFF;
 }
 
-.nav__item a:hover{
+.nav__item a:hover {
     background-color: rgb(54, 54, 54);
-    color:cyan;
-    width:100%;
+    color: cyan;
+    width: 100%;
 }
 
-.nav__item:hover{
+.nav__item:hover {
     background-color: rgb(54, 54, 54);
     border-bottom: 3px solid cyan;
 }
 
-nav ul li:hover ul{
-    display:flex;
+nav ul li:hover ul {
+    display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     flex-direction: column;
     gap: 12px;
     transform: scaleY(1)
 }
-nav ul li ul{
+
+nav ul li ul {
     transform: scaleY(0);
     padding: 0.5rem;
     width: 16rem;
@@ -100,67 +162,57 @@ nav ul li ul{
     transition: transform 0.2s;
 }
 
-.nav__menu{
+.nav__menu {
     border-bottom: 3px solid cyan;
 }
 
-.nav__menu a{
+.nav__menu a {
     color: #e9e7e7
 }
 
 /*Finaliza estilos NAV*/
 
 /*Main*/
-    /*Cards*/
-.contenedor__main{
-    display:flex;
+/*Cards*/
+.contenedor__main {
+    display: flex;
     gap: 30px;
-    margin:1rem 0px;
+    margin: 1rem 0px;
     align-items: flex-start;
     justify-content: center;
 }
 
-.card{
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    height:auto;
-    background-color:rgb(27, 27, 27);
-    border-radius: 10px;
-
-}
-
-.contenedor__productos{
+.contenedor__productos {
     display: flex;
     width: 60%;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
 
-.descripcion__producto{
+.descripcion__producto {
     margin: 0.7rem 0;
     color: #e9e7e7;
     font-size: 2rem
 }
 
-.price__producto{
+.price__producto {
     color: #006eff;
     font-size: 2rem
 }
 
-.info__producto{
-    display:flex;
+.info__producto {
+    display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
+
 }
 
-.sumar__carrito{
-    height:2.5rem;
+.sumar__carrito {
+    height: 2.5rem;
     width: 9rem;
-    background-color:rgb(255, 96, 96);
+    background-color: rgb(255, 96, 96);
     border-radius: 10px;
     border: none;
     font-size: 1.2rem;
@@ -169,11 +221,11 @@ nav ul li ul{
     transition: background-color 0.2s;
 }
 
-.sumar__carrito:hover{
-    background-color:rgb(0, 183, 255);
+.sumar__carrito:hover {
+    background-color: rgb(0, 183, 255);
 }
 
-.imagen__producto{
+.imagen__producto {
     cursor: pointer;
     background-color: white;
     min-width: 11rem;
@@ -181,7 +233,8 @@ nav ul li ul{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.imagen__producto img{
+
+.imagen__producto img {
     overflow: hidden;
     width: 95%;
     margin: 5px;
@@ -193,20 +246,20 @@ nav ul li ul{
 }
 
 
-.navegar__productos{
+.navegar__productos {
     margin-left: 3rem;
-    width: 23rem;
-    background-color: rgb(25, 25, 26);
     line-height: 2rem;
+    width: 300px;
+    min-width: 250px;
 }
 
-.items__productos{
+.items__productos {
     padding-left: 1rem;
     cursor: pointer;
     width: 100%;
     list-style-type: none;
     text-transform: uppercase;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: 10;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -214,21 +267,21 @@ nav ul li ul{
     transition: background-color 0.1s, transform 0.2s;
 }
 
-.items__productos:hover{
-    transform: scale(1.1,1.1);
-    background-color:rgb(97, 97, 97);
+.items__productos:hover {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(97, 97, 97);
 }
 
 /*Fin cards*/
 
 /*Estilos de pagina ayuda*/
-.div__ayuda{
+.div__ayuda {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.item__ayuda{
+.item__ayuda {
     padding: 3rem;
     margin-left: 10px;
     background-color: rgb(51, 51, 51);
@@ -236,7 +289,7 @@ nav ul li ul{
     border-radius: 8px;
 }
 
-.item__padre__ayuda{
+.item__padre__ayuda {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -244,13 +297,13 @@ nav ul li ul{
     margin: 20px 0px;
 }
 
-#form__ayuda{
+#form__ayuda {
     display: grid;
     grid-template-areas:
-    "nombre numero"
-    "email email"
-    "mensaje mensaje"
-    "boton boton";
+        "nombre numero"
+        "email email"
+        "mensaje mensaje"
+        "boton boton";
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 30% 40%;
     gap: 10px;
@@ -258,33 +311,33 @@ nav ul li ul{
     justify-content: center;
 }
 
-#nombre__form{
-    grid-area:nombre;
+#nombre__form {
+    grid-area: nombre;
 }
 
-#numero__form{
-    grid-area:numero;
+#numero__form {
+    grid-area: numero;
 }
 
-#email__form{
-    grid-area:email;
+#email__form {
+    grid-area: email;
 }
 
-#mensaje__form{
-    grid-area:mensaje;
+#mensaje__form {
+    grid-area: mensaje;
 }
 
-#boton__form{
+#boton__form {
     grid-area: boton;
 }
 
-.input__contacto{
+.input__contacto {
     height: 3rem;
     border-radius: 6px;
     border: 1px solid #000;
 }
 
-.button__contacto{
+.button__contacto {
     height: 3rem;
     background-color: #007aff;
     border-radius: 13px;
@@ -292,21 +345,22 @@ nav ul li ul{
     transition: background-color 0.2s;
 }
 
-.text__area__ayuda{
+.text__area__ayuda {
     height: 10rem;
     border-radius: 6px;
     border: 1px solid #000;
 
 }
 
-.button__contacto:hover{
+.button__contacto:hover {
     background-color: #034285;
 }
+
 /*Finaliza estilos de pagina ayuda*/
 
 
 /*Estilos de Footer*/
-footer{
+footer {
     padding-top: 30px;
     width: 100%;
     display: flex;
@@ -318,54 +372,55 @@ footer{
     border-top: 2px solid #000;
 }
 
-footer ul li{
+footer ul li {
     list-style-type: none;
 }
 
-.footer_div{
+.footer_div {
     display: inline-block;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 
-.footer__input{
+.footer__input {
     border-radius: 8px;
     height: 2rem;
-    width:100%;
+    width: 100%;
 }
 
-.footer__form{
+.footer__form {
     width: 16.5rem;
     position: relative;
 }
+
 /*Redes sociales*/
 
 
-.item__social{
+.item__social {
     color: white;
     transition: color 0.3s;
     height: 100%;
     display: inline-block;
 }
 
-#facebook:hover{
+#facebook:hover {
     color: rgb(0, 81, 255);
 }
 
-#twitter:hover{
+#twitter:hover {
     color: cyan;
 }
 
-#instagram:hover{
+#instagram:hover {
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
-.button__send{
+.button__send {
     border-radius: 10px;
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     border-color: transparent;
     right: 3px;
     top: 0;
@@ -373,7 +428,7 @@ footer ul li{
     height: 2rem;
 }
 
-footer h4{
+footer h4 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2rem;
     color: #FFFFFF;
@@ -381,85 +436,90 @@ footer h4{
 }
 
 /*Varios*/
-img{
+img {
     width: 100%;
 }
 
-.categorias{
+.categorias {
     max-width: 1100px
 }
 
-.itemCategoria{
+.itemCategoria {
     display: flex;
     height: 200px;
     justify-content: center;
-    width:100%;
+    width: 100%;
     flex-direction: column;
     gap: 30px;
     transition: all 0.3s
 }
-.itemCategoria:hover{
-    transform:scale(1.1,1.1);
+
+.itemCategoria:hover {
+    transform: scale(1.1, 1.1);
     background-color: rgb(214, 213, 213) !important;
     border-radius: 10px;
     cursor: pointer;
 }
 
-h1{
+h1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 4rem;
     color: #FFFFFF;
     text-decoration: underline;
 }
 
-p{
+p {
     line-height: 2rem;
 }
+
 .textUpperCase {
     text-transform: uppercase;
     font-size: 2rem;
 }
-.text{
+
+.text {
     font-family: 'Roboto Condensed', sans-serif;
     color: #e9e7e7;
     font-size: 1rem
 }
 
-.input__text{
+.input__text {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2rem;
     font-weight: 200;
 }
 
-button, a{
+button, a {
     cursor: pointer;
 }
 
-.color-negro{
+.color-negro {
     color: var(--bs-body-color)
 }
 
-.estiloLista{
+.estiloLista {
     list-style: none;
 }
-.text__white{
+
+.text__white {
     color: #fff;
     font-size: 1.2rem;
 }
 
 /*Tabla*/
-table{
+table {
     width: 50%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.table__item{
+
+.table__item {
     list-style-type: none;
 }
 
 
-th, td{
+th, td {
     font-family: 'Roboto Condensed', sans-serif;
     color: #e9e7e7;
     font-size: 1rem;
@@ -469,4 +529,5 @@ th, td{
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
 }
+
 /*Fin tabla*/
