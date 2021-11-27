@@ -192,9 +192,9 @@ nav ul li ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
+
 }
 
 .sumar__carrito {
@@ -236,9 +236,9 @@ nav ul li ul {
 
 .navegar__productos {
     margin-left: 3rem;
-    width: 23rem;
-    background-color: rgb(25, 25, 26);
     line-height: 2rem;
+    width: 300px;
+    min-width: 250px;
 }
 
 .items__productos {
