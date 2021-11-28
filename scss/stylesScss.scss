@@ -1,4 +1,4 @@
-@import "variables", "header", "footer", "main", "ayuda";
+@import "variables", "header", "footer", "main", "ayuda", "card";
 
 * {
     margin: 0;
@@ -12,7 +12,6 @@ body {
 
 .text {
     font-family: $fuenteTexto, sans-serif;
-    color: white;
     font-size: 1rem
 }
 
