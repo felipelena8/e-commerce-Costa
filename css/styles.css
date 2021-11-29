@@ -134,7 +134,7 @@ main section .cardIndex {
 .item__ayuda {
   padding: 3rem;
   margin-left: 10px;
-  background-color: #333333;
+  background-color: white;
   width: 40%;
   border-radius: 8px;
 }
@@ -145,48 +145,6 @@ main section .cardIndex {
   width: 100%;
   gap: 10px;
   margin: 20px 0px;
-}
-
-#form__ayuda {
-  display: grid;
-  grid-template-areas: "nombre numero" "email email" "mensaje mensaje" "boton boton";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 30% 40%;
-  gap: 10px;
-  justify-items: normal;
-  justify-content: center;
-}
-
-#nombre__form {
-  grid-area: nombre;
-}
-
-#numero__form {
-  grid-area: numero;
-}
-
-#email__form {
-  grid-area: email;
-}
-
-#mensaje__form {
-  grid-area: mensaje;
-}
-
-#boton__form {
-  grid-area: boton;
-}
-
-.input__contacto {
-  height: 3rem;
-  border-radius: 6px;
-  border: 1px solid #000;
-}
-
-.text__area__ayuda {
-  height: 10rem;
-  border-radius: 6px;
-  border: 1px solid #000;
 }
 
 .item {
