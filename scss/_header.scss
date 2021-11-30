@@ -18,31 +18,27 @@ header{
         background-size: 200% 200%;
         animation: lineaRGB 2s linear 0s infinite;
     }
-    .navItem:hover {
-        background-color: rgb(54, 54, 54);
-        border-bottom: 3px solid cyan;
+    .navItem{
+        transition: border-bottom 0.2s;
     }
     .navItem:hover {
         background-color: rgb(54, 54, 54);
         border-bottom: 3px solid cyan;
+
     }
     nav{
         ul li ul {
-            transform: scaleY(0);
             padding: 0.5rem;
             width: 16rem;
             background-color: #1f1f1f;
             list-style-type: none;
             position: absolute;
-            transition: transform 0.2s;
+            transition: all 3s;
         }
         ul li:hover ul {
             display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
             flex-direction: column;
             gap: 12px;
-            transform: scaleY(1)
         }
     }
 }

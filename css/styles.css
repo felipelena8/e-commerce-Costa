@@ -16,30 +16,25 @@ header .navBordeRGB {
   background-size: 200% 200%;
   animation: lineaRGB 2s linear 0s infinite;
 }
-header .navItem:hover {
-  background-color: #363636;
-  border-bottom: 3px solid cyan;
+header .navItem {
+  transition: border-bottom 0.2s;
 }
 header .navItem:hover {
   background-color: #363636;
   border-bottom: 3px solid cyan;
 }
 header nav ul li ul {
-  transform: scaleY(0);
   padding: 0.5rem;
   width: 16rem;
   background-color: #1f1f1f;
   list-style-type: none;
   position: absolute;
-  transition: transform 0.2s;
+  transition: all 3s;
 }
 header nav ul li:hover ul {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
   flex-direction: column;
   gap: 12px;
-  transform: scaleY(1);
 }
 
 footer {
@@ -165,6 +160,10 @@ main section .cardIndex {
 .item .itemBtn {
   max-width: 160px;
 }
+.item .itemBtn:hover {
+  background-color: white;
+  color: #0d6efd;
+}
 .item .itemText {
   font-size: 20px;
 }
@@ -173,6 +172,10 @@ main section .cardIndex {
   margin-right: 20px;
   width: 100%;
   max-width: 200px;
+}
+.item .itemImg:hover {
+  opacity: 50%;
+  cursor: pointer;
 }
 .item .itemCost {
   font-size: 30px;
