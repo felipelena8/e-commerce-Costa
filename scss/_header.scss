@@ -20,16 +20,15 @@ header{
     }
     .navItem{
         transition: border-bottom 0.2s;
+        border-bottom: 3px solid rgb(33,37,41);
     }
     .navItem:hover {
         background-color: rgb(54, 54, 54);
-        border-bottom: 3px solid cyan;
-
+        border-bottom: 3px solid  cyan;
     }
     nav{
         ul li ul {
             padding: 0.5rem;
-            width: 16rem;
             background-color: #1f1f1f;
             list-style-type: none;
             position: absolute;
@@ -39,6 +38,11 @@ header{
             display: flex;
             flex-direction: column;
             gap: 12px;
+        }
+        @media (max-width: 768px){
+            ul li ul{
+               width: 100% !important;
+            }
         }
     }
 }

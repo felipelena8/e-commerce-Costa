@@ -18,6 +18,7 @@ header .navBordeRGB {
 }
 header .navItem {
   transition: border-bottom 0.2s;
+  border-bottom: 3px solid #212529;
 }
 header .navItem:hover {
   background-color: #363636;
@@ -25,7 +26,6 @@ header .navItem:hover {
 }
 header nav ul li ul {
   padding: 0.5rem;
-  width: 16rem;
   background-color: #1f1f1f;
   list-style-type: none;
   position: absolute;
@@ -35,6 +35,11 @@ header nav ul li:hover ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media (max-width: 768px) {
+  header nav ul li ul {
+    width: 100% !important;
+  }
 }
 
 footer {
@@ -107,6 +112,7 @@ main section .itemCategoria:hover {
   background-color: #d6d5d5 !important;
   border-radius: 10px;
   cursor: pointer;
+  z-index: 2;
 }
 main section .cardIndex {
   position: relative;
