@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li><a class="dropdown-item text-white" href="#">No
-                                    hay elementos</a></li>
+                                        hay elementos</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,40 +49,43 @@
         <!--Barra para navegar entre paginas-->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
             <div class="container-fluid justify-content-md-evenly p-sm-2">
                 <div class="d-flex">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item navItem">
-                                <a class="nav-link active textLink text-white" aria-current="page" href="productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item dropdown navItem">
-                                <a class="nav-link dropdown textLink text-white" href="perifericos.html" role="button" aria-expanded="false">Perifericos</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Teclados</a></li>
-                                    <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Mouses</a></li>
-                                    <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Auriculares</a></li>
-                                    <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Microfonos</a></li>
-                                    <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Joysticks</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item navItem">
-                                <a class="nav-link textLink text-white" href="pcs_de_escritorio.html">Computadoras
-                                        de
-                                        escritorio</a>
-                            </li>
-                            <li class="nav-item navItem">
-                                <a class="nav-link textLink text-white" href="ayuda.html">Ayuda</a>
-                            </li>
-                        </ul>
+                        <div data-aos="fade-right">
+                            <ul class="navbar-nav">
+                                <li class="nav-item navItem">
+                                    <a class="nav-link active textLink text-white" aria-current="page" href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item dropdown navItem">
+                                    <a class="nav-link dropdown textLink text-white" href="perifericos.html" role="button" aria-expanded="false">Perifericos</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Teclados</a></li>
+                                        <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Mouses</a></li>
+                                        <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Auriculares</a></li>
+                                        <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Microfonos</a></li>
+                                        <li class="nav-item navItem"><a class="dropdown-item textLink text-white" href="construccion.html">Joysticks</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item navItem">
+                                    <a class="nav-link textLink text-white" href="pcs_de_escritorio.html">Computadoras
+                                                    de
+                                                    escritorio</a>
+                                </li>
+                                <li class="nav-item navItem">
+                                    <a class="nav-link textLink text-white" href="ayuda.html">Ayuda</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <h1 class="text-white mt-3 text-center m-3" data-aos="zoom-in-up"><strong><u>Perifericos</u></strong></h1>
         <div class="row align-items-start mb-3 justify-content-center">
             <!--Filtro de productos-->
             <div class="d-none d-lg-block mt-3 navegarProductos col-3">
@@ -95,7 +99,7 @@
             </div>
             <!--Productos-->
             <div class="container m-3 col">
-                <div class="item m-2"><img src="images/productos/auriculares.jpg" alt="Auriculares HyperX" class="itemImg">
+                <div class="item m-2" data-aos="zoom-in-right"><img src="images/productos/auriculares.jpg" alt="Auriculares HyperX" class="itemImg">
                     <div class="itemBody">
                         <h4 class="itemTitle m-0">Auriculares HyperX Cloud II </h4>
                         <p class="itemText m-0">Auriculares HyperX Cloud II Red PC | PS4 | Switch | XBOX</p>
@@ -104,7 +108,7 @@
                                 al carrito</a>
                     </div>
                 </div>
-                <div class="item m-2"><img src="images/productos/teclado.jpg" alt="Teclado redragon" class="itemImg">
+                <div class="item m-2" data-aos="zoom-in-right"><img src="images/productos/teclado.jpg" alt="Teclado redragon" class="itemImg">
                     <div class="itemBody">
                         <h4 class="itemTitle m-0">Teclado Redragon K550 YAMA</h4>
                         <p class="itemText m-0">Redragon K550 YAMA Black Mechanical Retroiluminado RGB Español</p>
@@ -112,7 +116,7 @@
                         <a href="construccion.html" class="btn btn-primary itemBtn">Añadir al carrito</a>
                     </div>
                 </div>
-                <div class="item m-2"><img src="images/productos/teclado 2.jpg" alt="Teclado Logitech" class="itemImg">
+                <div class="item m-2" data-aos="zoom-in-right"><img src="images/productos/teclado 2.jpg" alt="Teclado Logitech" class="itemImg">
                     <div class="itemBody">
                         <h4 class="itemTitle m-0">Teclado Logitech G213</h4>
                         <p class="itemText m-0">Logitech G213 Prodigy RGB Gaming Español</p>
@@ -120,7 +124,7 @@
                         <a href="construccion.html" class="btn btn-primary itemBtn">Añadir al carrito</a>
                     </div>
                 </div>
-                <div class="item m-2"><img src="images/productos/mouse.jpg" alt="Mouse Glorious" class="itemImg">
+                <div class="item m-2" data-aos="zoom-in-right"><img src="images/productos/mouse.jpg" alt="Mouse Glorious" class="itemImg">
                     <div class="itemBody">
                         <h4 class="itemTitle m-0">Mouse Glorious Model D</h4>
                         <p class="itemText m-0"></p>
@@ -131,7 +135,7 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="zoom-in-up">
         <div class="container">
             <div class="row">
                 <!--Contacto-->
@@ -175,6 +179,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b3e3212614.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
