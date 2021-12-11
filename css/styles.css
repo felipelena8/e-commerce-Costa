@@ -126,28 +126,6 @@ main section .cardIndex {
   border-radius: 0.25rem;
 }
 
-.div__ayuda {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.item__ayuda {
-  padding: 3rem;
-  margin-left: 10px;
-  background-color: white;
-  width: 40%;
-  border-radius: 8px;
-}
-
-.item__padre__ayuda {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 10px;
-  margin: 20px 0px;
-}
-
 .item {
   display: flex;
   background-color: white;
