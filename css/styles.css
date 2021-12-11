@@ -225,7 +225,21 @@ body {
   font-size: 1rem;
 }
 
-button, a {
+ul .textLink {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  ul .textLink {
+    font-size: 1rem;
+  }
+}
+ul li ul .textLink {
+  font-size: 1rem;
+}
+
+button,
+a {
   cursor: pointer;
 }
 

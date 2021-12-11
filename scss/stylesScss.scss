@@ -1,5 +1,9 @@
-@import "variables", "header", "footer", "main", "ayuda", "card";
-
+@import "variables",
+"header",
+"footer",
+"main",
+"ayuda",
+"card";
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +19,21 @@ body {
     font-size: 1rem
 }
 
-button, a {
+ul {
+    .textLink {
+        font-family: $fuenteTexto, sans-serif;
+        font-size: 1.5rem;
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+    li ul .textLink {
+        font-size: 1rem;
+    }
+}
+
+button,
+a {
     cursor: pointer;
 }
 
@@ -23,6 +41,6 @@ button, a {
     color: $colorOscuro
 }
 
-img{
+img {
     size: 10px;
 }
