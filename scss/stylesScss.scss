@@ -1,12 +1,17 @@
 @import "variables",
-"header",
 "footer",
 "main",
-"card";
+"card",
+"mixins",
+"header";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +27,7 @@ ul {
     .textLink {
         font-family: $fuenteTexto, sans-serif;
         font-size: 1.5rem;
+        text-transform: uppercase;
         @media (max-width: 768px) {
             font-size: 1rem;
         }

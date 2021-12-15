@@ -10,6 +10,9 @@
 header {
     width: 100%;
     background-color: $colorOscuro;
+    position: sticky;
+    top: 0;
+    z-index: 3;
     .navBordeRGB {
         background: linear-gradient(60deg, fuchsia 0%, cyan 50%, fuchsia 100%);
         height: 3px;
@@ -19,28 +22,35 @@ header {
     .navItem {
         transition: border-bottom 0.2s;
         border-bottom: 3px solid rgb(33, 37, 41);
+        &:hover {
+            @include linkActivado(cyan);
+        }
     }
-    .navItem:hover {
-        background-color: rgb(54, 54, 54);
-        border-bottom: 3px solid cyan;
+    .activado {
+        @include linkActivado(fuchsia);
     }
     nav {
-        ul li ul {
-            padding: 0.5rem;
-            background-color: $colorOscuro;
-            list-style-type: none;
-            position: absolute;
-            transition: all 3s;
-        }
-        ul li:hover ul {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        @media (max-width: 768px) {
-            ul li ul {
-                width: 100% !important;
+        @media (min-width: 768px) {
+            ul {
+                margin-top: 0px !important;
+                li {
+                    ul {
+                        padding: 0.5rem;
+                        background-color: $colorOscuro;
+                        list-style-type: none;
+                        position: absolute;
+                        transition: all 3s;
+                        gap: 12px;
+                        flex-direction: column;
+                    }
+                    &:hover ul {
+                        display: flex;
+                    }
+                }
             }
+        }
+        ul {
+            margin-top: 0.5rem;
         }
     }
 }
