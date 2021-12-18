@@ -1,12 +1,11 @@
-main{
+main {
     .navegarProductos {
         margin-left: 3rem;
         line-height: 2rem;
         width: 400px;
         min-width: 250px;
-        display:flex;
+        display: flex;
     }
-    
     .itemsProductos {
         padding-left: 1rem;
         cursor: pointer;
@@ -20,26 +19,20 @@ main{
         border: 1px solid rgb(177, 177, 177);
         transition: background-color 0.1s, transform 0.2s;
     }
-    
     .itemsProductos:hover {
         transform: scale(1.1, 1.1);
         background-color: rgb(97, 97, 97);
     }
-
-    section{
+    section {
         .categorias {
             max-width: 1100px
         }
-        
         .itemCategoria {
-            display: flex;
             height: 200px;
             justify-content: center;
-            flex-direction: column;
             gap: 30px;
             transition: all 0.3s
         }
-        
         .itemCategoria:hover {
             transform: scale(1.1, 1.1);
             background-color: rgb(214, 213, 213) !important;
@@ -47,16 +40,13 @@ main{
             cursor: pointer;
             z-index: 2;
         }
-
-        .cardIndex{
+        .cardIndex {
             position: relative;
             display: flex;
             flex-direction: column;
             min-width: 0;
             word-wrap: break-word;
-            background-color: #fff;
             background-clip: border-box;
-            border: 1px solid rgba(0, 0, 0, 0.125);
             border-radius: 0.25rem;
         }
     }

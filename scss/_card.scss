@@ -1,58 +1,58 @@
-.item{
+.item {
     display: flex;
     background-color: white;
     border-radius: 10px;
-    padding:10px;
-    width: 100%;
+    padding: 10px;
     height: 250px;
-    .itemBody{
+    .itemBody {
         display: flex;
         flex-direction: column;
-        margin-left:10px;
+        margin-left: 10px;
         gap: 10px;
-        justify-content:space-between;
+        justify-content: space-between;
     }
-    .itemBtn{
+    .itemBtn {
         max-width: 160px;
     }
-    .itemBtn:hover{
+    .itemBtn:hover {
         background-color: white;
         color: #0d6efd;
     }
-    .itemText{
-        font-size:20px;
+    .itemText {
+        font-size: 20px;
     }
-    .itemImg{
+    .itemImg {
         align-self: center;
         margin-right: 20px;
         width: 100%;
         max-width: 200px;
     }
-    .itemImg:hover{
+    .itemImg:hover {
         opacity: 50%;
         cursor: pointer;
     }
-    .itemCost{
+    .itemCost {
         font-size: 30px;
         justify-content: flex-end;
     }
 }
+
 @media (max-width: 576px) {
-    .item{
+    .item {
         flex-direction: column;
         height: auto;
     }
-    .itemBody{
-        margin-left:0px !important;
+    .itemBody {
+        margin-left: 0px !important;
         align-items: center;
     }
-    .itemBtn{
+    .itemBtn {
         align-self: center;
-        max-width:100% !important;
+        max-width: 100% !important;
         width: 100%;
     }
-    .itemImg{
+    .itemImg {
         width: 200px;
-        max-width:100%;
+        max-width: 100%;
     }
 }
