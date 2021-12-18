@@ -212,6 +212,7 @@ header nav ul {
 
 body {
   background: linear-gradient(#0b0b0b, black);
+  overflow-x: hidden;
 }
 
 .text {
