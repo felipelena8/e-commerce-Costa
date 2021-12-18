@@ -210,10 +210,6 @@ header nav ul {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: linear-gradient(#0b0b0b, black);
 }
